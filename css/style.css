@@ -1,0 +1,262 @@
+* {
+  font-family: "Mukta", sans-serif;
+}
+/********** Template CSS **********/
+:root {
+  --primary: #06a3da;
+  --secondary: #f57e57;
+  --light: #eef9ff;
+  --dark: #091e3e;
+}
+
+h1,
+h2,
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+  font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+  font-weight: 500 !important;
+}
+
+.btn {
+  font-family: "Mukta", sans-serif;
+  font-weight: 600;
+  transition: 0.5s;
+  font-weight: bolder;
+}
+
+.btn-primary,
+.btn-secondary {
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  font-weight: bolder;
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  font-weight: bolder;
+}
+
+.btn-square {
+  width: 36px;
+  font-weight: bolder;
+  height: 36px;
+}
+
+.btn-sm-square {
+  width: 28px;
+  height: 28px;
+  font-weight: bolder;
+}
+
+.btn-lg-square {
+  width: 46px;
+  height: 46px;
+  font-weight: bolder;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
+
+.top-shape::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 100%;
+  top: 0;
+  left: -17px;
+  background: var(--primary);
+  transform: skew(40deg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Mukta", sans-serif;
+  padding: 35px 15px;
+  font-size: 18px;
+  color: var(--dark);
+  outline: none;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+  padding: 20px 15px;
+  font-family: "Mukta", sans-serif;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary);
+  font-family: "Mukta", sans-serif;
+  text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link,
+  .sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 10px 0;
+    font-family: "Mukta", sans-serif;
+  }
+}
+
+@media (max-width: 576zpx) {
+  .carousel-caption h5 {
+    font-size: 14px;
+    font-weight: 500 !important;
+  }
+
+  .carousel-caption h1 {
+    font-size: 30px;
+    font-weight: 600 !important;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (min-width: 991.98px) {
+  .banner {
+    position: relative;
+    margin-top: -90px;
+    z-index: 1;
+  }
+}
+.section-title h5::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 3px;
+  right: -55px;
+  bottom: 11px;
+  background: var(--primary);
+}
+
+.section-title h5::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 3px;
+  right: -75px;
+  bottom: 11px;
+  background: var(--secondary);
+}
+
+.twentytwenty-wrapper {
+  height: 100%;
+}
+
+.hero-header {
+  background: linear-gradient(rgba(9, 30, 62, 0), rgba(9, 30, 62, 0)),
+    url(../img/Banner3.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.service-item img,
+.service-item .bg-light,
+.service-item .bg-light h5,
+.team-item .team-text {
+  transition: 0.5s;
+}
+
+.service-item:hover img {
+  transform: scale(1.15);
+}
+
+.team-item .team-text::after,
+.service-item .bg-light::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  border-radius: 100px / 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+/****about*/
+.heading {
+  font-family: "Mukta", sans-serif;
+}
+
+/****Updated 3 Sep*/
+.carousel-caption {
+  position: absolute;
+  right: 0%;
+  bottom: 1.25rem;
+  left: 0%;
+  width: 100%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(181, 255, 81, 0);
+  z-index: 1;
+}
+
+/****Updated 9 Sep*/
+#Fo {
+  font-family: "Raleway", sans-serif;
+}
+
